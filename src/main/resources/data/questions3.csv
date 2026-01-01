@@ -1,0 +1,15 @@
+ID;question label en;question label fr;content;relatedQuestion ID;order;unit;enum en;enum fr
+Q1;Company Overview;Présentation de l'entreprise;Text;;0;;;;
+Q2;Number of Employees;Nombre d'employés;Table;;1;;;;
+Q2_1;Employees at Headquarters;Employés au siège;number;Q2;0;;
+Q2_2;Employees by Department;Employés par département;Table;Q2;1;;;;
+Q2_2_1;Engineering;Ingénierie;number;Q2_2;0;;
+Q2_2_2;Sales;Ventes;number;Q2_2;1;;
+Q2_2_3;Support;Support;number;Q2_2;2;;
+Q2_3;Average Employee Age;Âge moyen des employés;number;Q2;2;years;;
+Q3;Employee Satisfaction;Satisfaction des employés;enum;;2;;High,Medium,Low;Élevé,Moyen,Bas
+Q4;Financial Overview;Vue financière;Table;;3;;;;
+Q4_1;Revenue;Revenus;number;Q4;0;M€;;
+Q4_2;Expenses;Dépenses;number;Q4;1;M€;;
+Q4_3;Profit;Bénéfice;number;Q4;2;M€;;
+Q5;Notes;Remarques;Text;;4;;;;

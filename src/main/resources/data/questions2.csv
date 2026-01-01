@@ -1,0 +1,14 @@
+ID;question label en;question label fr;content;relatedQuestion ID;order;unit;enum en;enum fr
+T1;Global employees;Employés globaux;Table;;0;;;
+T1_1;Number of employees (end of period);Nombre d'employés (fin de période);number;T1;0;;;
+T1_2;Number of employees (average during period);Nombre d'employés (moyenne sur la période);number;T1;1;;;
+T1_3;Employee turnover;Turnover;number;T1;2;%;;;
+T2;Employees by country;Employés par pays;Table;;1;;;
+T2_1;Country A employees;Employés pays A;number;T2;0;;;
+T2_2;Country B employees;Employés pays B;number;T2;1;;;
+T2_3;Employees by department;Employés par département;Table;T2;2;;;
+T2_3_1;Department X;Département X;number;T2_3;0;;;
+T2_3_2;Department Y;Département Y;number;T2_3;1;;;
+T3;Employee satisfaction;Satisfaction des employés;Text;;2;;;
+T3_1;Survey participation;Participation au sondage;number;T3;0;%;;;
+T3_2;Average satisfaction score;Score moyen de satisfaction;number;T3;1;;;
