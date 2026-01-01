@@ -2,6 +2,9 @@
 
 
 This project renders a single-page dynamic form based on a hierarchical question catalog. Questions can be nested and tables are supported as question containers.
+
+![Demo](./assets/Demo.gif)
+
 ## Tech Stack
 
 * **Frontend:** React, TypeScript, Vite, React Testing Library
