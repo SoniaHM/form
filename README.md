@@ -10,13 +10,18 @@ This project renders a single-page dynamic form based on a hierarchical question
 * **Frontend:** React, TypeScript, Vite, React Testing Library
 * **Backend:** Java, Spring Boot, JPA/Hibernate
 * **Database:** H2
+* **Containerization:** Docker, Docker Compose
 
 ---
 
 ## Getting Started
 
 ### Prerequisites
+**Option 1: Docker**
+* Docker
+* Docker Compose
 
+**Option 2: Local Development**
 * Node.js >= 20.x
 * Java JDK 17+ required for the backend.  
   Recommended: download the installer from [Adoptium](https://adoptium.net/fr/temurin/releases?version=17&os=any&arch=any) and follow the instructions for your OS. After installation, verify with:
@@ -24,31 +29,43 @@ This project renders a single-page dynamic form based on a hierarchical question
   java -version
   javac -version
 
-### Installation
+### Installation & Running
 
+#### With Docker
 ```bash
 # Clone repo
 git clone https://github.com/SoniaHM/form.git
 cd form
 
-# Frontend
-cd frontend
-npm install
+# Launch the application
+docker-compose up --build
 ```
 
----
+Open `http://localhost:5173`
 
-## Running the App
-
-### Backend
-
+**To stop:**
 ```bash
-cd backend
+docker-compose down
+```
+
+#### Without Docker (Local Development)
+```bash
+# Clone repo
+git clone https://github.com/SoniaHM/form.git
+cd form
+
+# Install frontend dependencies
+cd frontend
+npm install
+cd ..
+```
+
+**Run Backend:**
+```bash
 ./mvnw spring-boot:run
 ```
 
-### Frontend
-
+**Run Frontend (in another terminal):**
 ```bash
 cd frontend
 npm run dev
@@ -56,7 +73,8 @@ npm run dev
 
 Open `http://localhost:5173`
 
---- 
+---
+
 
 ## AI tools
 
@@ -67,6 +85,7 @@ AI was mainly used to:
 * Reason about how to model and render nested questions and table-like structures
 * Generate mock data (CSV) to test different combinations of questions (nested levels, tables, enums, numbers, text)
 * CSS styling
+* Create docker config
 
 ## Next improvements
 
