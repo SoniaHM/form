@@ -15,7 +15,7 @@ function App() {
     fetchQuestions().then((allQuestions) => {
       setAllQuestions(allQuestions);
 
-      const mainQuestions = allQuestions.filter(q => !q.relatedQuestionId).sort((a, b) => {
+      const mainQuestions = allQuestions.filter((q: Question) => !q.relatedQuestionId).sort((a: Question, b: Question) => {
         const numA = parseInt(a.id.split('_')[1], 10);
         const numB = parseInt(b.id.split('_')[1], 10);
         return numA - numB;
